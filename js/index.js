@@ -15,7 +15,7 @@ $(function () {
             `<tr>
                 <th scope="row">${no}</th>
                     <td>
-                        <a href="country.html?country=${country}">${country}</a>
+                        <a href="country_select.html?country=${country}">${country}</a>
                     </td>
                     <td>${confirmed}</td>
                     <td>${deaths}</td>

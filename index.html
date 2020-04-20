@@ -11,6 +11,10 @@
 
   <title>COVID-19 Dashboard</title>
 
+  <link href="https://unpkg.com/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css" rel="stylesheet">
+
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -31,9 +35,11 @@
   <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="index/vendor/perfect-scrollbar/perfect-scrollbar.css">
   <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="index/css/util.css">
-    <link rel="stylesheet" type="text/css" href="index/css/main.css">
-  <!--===============================================================================================-->
+
+
+  <link href="https://unpkg.com/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
+  <link href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css" rel="stylesheet">
 
 </head>
 
@@ -73,7 +79,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="country.html">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Country</span></a>
       </li>
@@ -301,128 +307,104 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-              <div class="limiter">
-                <div class="container-table100">
-
-                  <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">COVID-19 situation in THE WORLD</h1>
-                  </div>
-
-                  <div class="wrap-table100">
-                    <div class="table100">
-                      <!--<table>
-                        <thead>
-                          <tr class="table100-head">
-                            <th class="column1">#</th>
-                            <th class="column2">ชื่อประเทศ</th>
-                            <th class="column3">ผู้ติดเชื้อ (คน)</th>
-                            <th class="column4">ผู้เสียชีวิต (คน)</th>
-                            <th class="column5">รักษาแล้ว (คน)</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                              <td class="column1">1</td>
-                              <td class="column2">
-                                <a href="test.html?var=value&var2=value2">ไทย</a>
-                              </td>
-                              <td class="column3">999</td>
-                              <td class="column4">999</td>
-                              <td class="column5">999</td>
-                            </tr>
-                            <tr>
-                              <td class="column1">1</td>
-                              <td class="column2">ไทย</td>
-                              <td class="column3">999</td>
-                              <td class="column4">999</td>
-                              <td class="column5">999</td>
-                            </tr>
-                            <tr>
-                              <td class="column1">1</td>
-                              <td class="column2">ไทย</td>
-                              <td class="column3">999</td>
-                              <td class="column4">999</td>
-                              <td class="column5">999</td>
-                            </tr>
-                            <tr>
-                              <td class="column1">1</td>
-                              <td class="column2">ไทย</td>
-                              <td class="column3">999</td>
-                              <td class="column4">999</td>
-                              <td class="column5">999</td>
-                            </tr>
-                            <tr>
-                              <td class="column1">1</td>
-                              <td class="column2">ไทย</td>
-                              <td class="column3">999</td>
-                              <td class="column4">999</td>
-                              <td class="column5">999</td>
-                            </tr>
-                            <tr>
-                              <td class="column1">1</td>
-                              <td class="column2">ไทย</td>
-                              <td class="column3">999</td>
-                              <td class="column4">999</td>
-                              <td class="column5">999</td>
-                            </tr>
-                            <tr>
-                              <td class="column1">1</td>
-                              <td class="column2">ไทย</td>
-                              <td class="column3">999</td>
-                              <td class="column4">999</td>
-                              <td class="column5">999</td>
-                            </tr>
-                            <tr>
-                              <td class="column1">1</td>
-                              <td class="column2">ไทย</td>
-                              <td class="column3">999</td>
-                              <td class="column4">999</td>
-                              <td class="column5">999</td>
-                            </tr>
-                            <tr>
-                              <td class="column1">1</td>
-                              <td class="column2">ไทย</td>
-                              <td class="column3">999</td>
-                              <td class="column4">999</td>
-                              <td class="column5">999</td>
-                            </tr>
-                            
-                            
-                        </tbody>
-                      </table>
-                    -->
-
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th class="column1">#</th>
-                          <th class="column2">ชื่อประเทศ</th>
-                          <th class="column3">ผู้ติดเชื้อ (คน)</th>
-                          <th class="column4">ผู้เสียชีวิต (คน)</th>
-                          <th class="column5">รักษาแล้ว (คน)</th>
-                        </tr>
-                      </thead>
-                      <tbody id="data">
-                      </tbody>
-                    </table>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
+        <div class="container-fluid mt-2">
+            <div id="toolbar">
+              <h3>COVID-19 Update (Live)</h3>
             </div>
-
-
-
-            </div>
-          </div>
-
+            <table
+                id="table"
+                data-toolbar="#toolbar"
+                data-search="true"
+                data-show-toggle="true"
+                data-show-columns="true"
+                data-show-columns-toggle-all="true"
+                data-show-export="true"
+                data-sort-name="totalcases"
+                data-sort-order="desc"
+                data-show-pagination-switch="true"
+                data-pagination="false"
+                data-page-list="[10, 25, 50, 100, all]"
+                data-show-footer="true">
+            </table>
         </div>
+    
+        <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table-locale-all.min.js"></script>
+        <script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/export/bootstrap-table-export.min.js"></script>
+        <script>
+            axios.get('https://api.covid19api.com/summary').then(function (response) {
+                var rawData = myData(response.data.Countries);
+                myTable(rawData);
+            }).catch(function (error) {
+                console.log(error);
+            })
+            
+            function myData(data) {
+                var list = [];
+                data.forEach(function(item) {
+                    list.push({
+                        country: '<img src="img/flags/'+item.CountryCode.toLowerCase()+'.svg" width="36"> ' + item.Country, //github.com/rinvex/countries
+                        newcases: item.NewConfirmed,
+                        totalcases: item.TotalConfirmed,
+                        newdeaths: item.NewDeaths,
+                        totaldeaths: item.TotalDeaths,
+                        newrecoveries: item.NewRecovered,
+                        totalrecoveries: item.TotalRecovered,
+                        lastupdate: new Date(item.Date).getDate()+'/'+new Date(item.Date).getMonth()+'/'+new Date(item.Date).getFullYear() //.toLocaleString()
+                    });
+                });
+                return list;
+            }
+          
+            function myTable(arr) {
+                var myTable = $('#table').bootstrapTable({
+                    height: 600,
+                    locale: 'en_US',
+                    columns: [
+                        [
+                            {field:'country', title:'Countries and territories', rowspan:2, align:'left', valign:'middle', footerFormatter:countFormatter}, 
+                            {title:'Confirmed infections', colspan:2, align:'center', valign:'middle'}, 
+                            {title:'Confirmed deaths', colspan:2, align:'center', valign:'middle'}, 
+                            {title:'Reported recoveries', colspan:2, align:'center', valign:'middle'}, 
+                            {field:'lastupdate', title:'Date', rowspan:2, align:'center', valign:'middle'}
+                        ],
+                        [
+                            {field:'newcases', title:'New Cases',sortable:true, align:'right', formatter:numberFormatter, footerFormatter:totalFormatter},
+                            {field:'totalcases', title:'Total Cases',sortable:true, align:'right', formatter:numberFormatter, footerFormatter:totalFormatter}, 
+                            {field:'newdeaths', title:'New Deaths', sortable:true, align:'right', formatter:numberFormatter, footerFormatter:totalFormatter}, 
+                            {field:'totaldeaths', title:'Total Deaths', sortable:true, align:'right', formatter:numberFormatter, footerFormatter:totalFormatter}, 
+                            {field:'newrecoveries', title:'New Recovered', sortable:true, align:'right', formatter:numberFormatter, footerFormatter:totalFormatter}, 
+                            {field:'totalrecoveries', title:'Total Recovered', sortable:true, align:'right', formatter:numberFormatter, footerFormatter: totalFormatter}
+                        ]
+                    ],
+                    data: arr
+                });
+                return myTable;
+            }
+            
+            function countFormatter(data) {
+                return data.length
+            }
+            
+            function numberFormatter(value, row){
+                return value.toLocaleString('en-US');
+            }
+    
+            function totalFormatter(data) {
+                var field = this.field
+                var total = data.map(function (row) {
+                    return row[field]
+                }).reduce(function (sum, i) {
+                    return sum + i
+                }, 0);
+                return total.toLocaleString('en-US');
+            }
+        </script>
         <!-- /.container-fluid -->
 
       </div>
@@ -449,24 +431,12 @@
     <i class="fas fa-angle-up"></i>
   </a>
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
-  <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
-
-  <script src="js/index.js"></script>
 
 </body>
 
