@@ -104,7 +104,7 @@ iframe {
 
 .container-table100 {
   width: 100%;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   /*
   background: #c850c0;
   background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
@@ -200,21 +200,22 @@ tbody tr:hover {
 }
 
 .column2 {
-  width: 240px;
+  width: 200px;
 }
 
 .column3 {
   width: 150px;
+  text-align: center;
 }
 
 .column4 {
   width: 150px;
-  text-align: right;
+  text-align: center;
 }
 
 .column5 {
   width: 150px;
-  text-align: right;
+  text-align: center;
 }
 
 .column6 {
@@ -252,34 +253,36 @@ tbody tr:hover {
     line-height: 1.2;
     font-weight: unset;
     position: absolute;
-    width: 40%;
+    /*width: 40%;*/
     left: 30px;
     top: 0;
   }
   table tbody tr td:nth-child(1):before {
-    content: "Date";
+    content: "";
+    text-align: center;
   }
   table tbody tr td:nth-child(2):before {
-    content: "Order ID";
+    content: "";
+    text-align: center;
   }
   table tbody tr td:nth-child(3):before {
-    content: "Name";
+    content: "ผู้ติดเชื้อ (คน)";
   }
   table tbody tr td:nth-child(4):before {
-    content: "Price";
+    content: "ผู้เสียชีวิต (คน)";
   }
   table tbody tr td:nth-child(5):before {
-    content: "Quantity";
+    content: "รักษาแล้ว (คน)";
   }
-  table tbody tr td:nth-child(6):before {
+  /*table tbody tr td:nth-child(6):before {
     content: "Total";
-  }
+  }*/
 
-  .column4,
+  /*.column4,
   .column5,
   .column6 {
     text-align: left;
-  }
+  }*/
 
   .column4,
   .column5,
