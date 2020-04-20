@@ -5,9 +5,9 @@ $(function () {
     $.getJSON(url, function (result) {
 
         var no = 1;
-        var confirmed = 0;
-        var deaths = 0;
-        var recovered = 0;
+        var confirmed = "Loading...";
+        var deaths = "Loading...";
+        var recovered = "Loading...";
 
         for (var country in result) {
 
