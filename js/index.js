@@ -8,6 +8,7 @@ $(function () {
         var confirmed = 0;
         var deaths = 0;
         var recovered = 0;
+
         for (var country in result) {
 
             var row = 
@@ -19,17 +20,14 @@ $(function () {
                     <td>${confirmed}</td>
                     <td>${deaths}</td>
                     <td>${recovered}</td>
+                
             </tr>`;
 
             $("#data").append(row);
             no++;
 
         }
-
+            
     });
-
-
-
-
 
 })
