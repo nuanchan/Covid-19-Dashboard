@@ -5,9 +5,9 @@ $(function () {
     $.getJSON(url, function (result) {
 
         var no = 1;
-        var confirmed = "Loading...";
+        /*var confirmed = "Loading...";
         var deaths = "Loading...";
-        var recovered = "Loading...";
+        var recovered = "Loading...";*/
 
         for (var country in result) {
 
@@ -17,9 +17,6 @@ $(function () {
                     <td>
                         <a href="country_select.html?country=${country}">${country}</a>
                     </td>
-                    <td>${confirmed}</td>
-                    <td>${deaths}</td>
-                    <td>${recovered}</td>
                 
             </tr>`;
 
